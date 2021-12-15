@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New CompanyInformation{% endblock %}
+
+{% block body %}
+    <h1>Create new CompanyInformation</h1>
+
+    {{ include('company_information/_form.html.twig') }}
+
+    <a href="{{ path('company_information_index') }}">back to list</a>
+{% endblock %}

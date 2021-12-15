@@ -1,0 +1,35 @@
+<h1>Liste des commandes</h1>
+
+<ul>
+	{% for order in orders %}
+		<br><br>
+
+
+		<li>
+			{# Firstname :
+												{{ order.client_firstname }}
+												<br><br> #}
+			Lastname :
+			{{ order.client_lastname }}
+			<br><br>
+			Adress :
+			{{ order.client_address }}
+			<br><br>
+			Phone number :
+			{{ order.phone_number }}
+			<br><br>
+			Order status :
+			{{ order.order_status }}
+			<br><br>
+			Maximum date :
+			{{ order.maximum_date }}
+			<br><br>
+
+
+		</li>
+
+
+	{% endfor %}
+
+
+</ul>
